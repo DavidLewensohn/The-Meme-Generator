@@ -1,0 +1,49 @@
+.main-container {
+    background-color: var(--main-bck-color);
+    border-radius: 10px;
+    margin: 0 auto;
+
+
+}
+
+.gallery-head form {
+    margin: 0 auto;
+    height: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.search {
+    background-color: var(--body-color);
+}
+
+.more-button {
+    background-image: var(--header-grad-color);
+    box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.15);
+    color: white;
+    height: 2rem;
+    width: 5rem;
+    border-radius: 18px;
+    font-size: 18px;
+}
+
+
+
+.images-container {
+    display: grid;
+    margin: 0 auto;
+    width: 70.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr, 1fr, 1fr;
+    gap: 2rem;
+}
+
+.image-item {
+    background: url("/meme-imgs-s/1.jpg");
+    background-position: center center;
+    background-size: cover;
+    width: 12.5rem;
+    height:  10.8rem;
+    align-items: center;
+    justify-content: center;
+}
