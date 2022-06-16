@@ -21,11 +21,11 @@
     </header>
 
     <main>
-        <div class="main-container">
+        <section class="main-gallery-container">
             <div class="gallery-head">
                 <form action="">
-                    <div ><input type="search" placeholder="Search"></div>
-                    <div ><input type="words-filter" ></div>
+                    <div><input type="search" placeholder="Search"></div>
+                    <div><input type="words-filter"></div>
                     <button class="more-button">More</button>
                 </form>
             </div>
@@ -45,11 +45,28 @@
                 <div class="image-item"></div>
             </section>
 
-            <section class="meme-maker"></section>
 
-        </div>
+        </section>
+
+
+        <section class="main-meme-maker">
+            <canvas width="450px" height="450px"></canvas>
+
+
+            <div class="edit-tools-container">
+                <!-- <form onsubmit="onInput(event)"> -->
+                    <input onchange="onInput(event)" name="text-input" type="text" >
+                    <!-- <button>yes</button> -->
+                <!-- </form> -->
+
+            </div>
+        </section>
+
+
+
     </main>
-
+    <script src="js/memeServise.js"></script>
+    <script src="js/memeControler.js"></script>
 </body>
 
 </html>

@@ -1,9 +1,8 @@
-.main-container {
+.main-gallery-container {
     background-color: var(--main-bck-color);
     border-radius: 10px;
     margin: 0 auto;
-
-
+    display: none;           
 }
 
 .gallery-head form {
