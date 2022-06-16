@@ -1,7 +1,9 @@
 .main-meme-maker {
     background-color: rgb(119, 64, 64);
     width: 100%;
-    display: flex;
+    display: flex; 
+    /* display: none; */
+    align-items: center;
     
 }
 

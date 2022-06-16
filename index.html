@@ -31,18 +31,11 @@
             </div>
 
             <section class="images-container">
-                <div class="image-item"></div>
-                <div class="image-item"></div>
-                <div class="image-item"></div>
-                <div class="image-item"></div>
-                <div class="image-item"></div>
-                <div class="image-item"></div>
-                <div class="image-item"></div>
-                <div class="image-item"></div>
-                <div class="image-item"></div>
-                <div class="image-item"></div>
-                <div class="image-item"></div>
-                <div class="image-item"></div>
+                <div class="image-item" onclick="onImgSelect(self)"></div>
+                <div class="image-item" onclick= "onImgSelect(self)"></div>
+     
+
+
             </section>
 
 
@@ -55,8 +48,10 @@
 
             <div class="edit-tools-container">
                 <!-- <form onsubmit="onInput(event)"> -->
-                    <input onchange="onInput(event)" name="text-input" type="text" >
-                    <!-- <button>yes</button> -->
+                    <input onchange="onTextInput(event)" name="text-input" type="text" >
+                    <input onchange="onColorInput(event)" name="color-input" type="color" >
+                    <button onclick="onLargeText()">+</button>
+                    <button onclick="onSmallText()">-</button>
                 <!-- </form> -->
 
             </div>
@@ -66,6 +61,7 @@
 
     </main>
     <script src="js/memeServise.js"></script>
+    <script src="js/galleryController.js"></script>
     <script src="js/memeControler.js"></script>
 </body>
 

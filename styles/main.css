@@ -2,7 +2,7 @@
     background-color: var(--main-bck-color);
     border-radius: 10px;
     margin: 0 auto;
-    display: none;           
+    /* display: none;    */
 }
 
 .gallery-head form {
@@ -38,7 +38,7 @@
 }
 
 .image-item {
-    background: url("/meme-imgs-s/1.jpg");
+    /* background: url("/meme-imgs-s/1.jpg"); */
     background-position: center center;
     background-size: cover;
     width: 12.5rem;
