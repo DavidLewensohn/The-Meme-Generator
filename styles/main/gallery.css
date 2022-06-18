@@ -1,0 +1,62 @@
+.main-gallery-container {
+    background-color: var(--main-bck-color);
+    border-radius: 10px;
+    margin: 0 auto;
+    /* display: none;    */
+}
+
+.gallery-head  {
+    margin: 0 auto;
+    height: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+}
+
+.search {
+    box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.15);
+    color: white;
+    height: 2rem;
+    width: 10rem;
+    border-radius: 18px;
+    font-size: 18px;
+    color: #33be6d;
+}
+.search-button{
+    box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.15);
+    color: white;
+    height: 2rem;
+
+    border-radius: 10px;
+    font-size: 18px;
+    color: #33be6d;
+}
+
+.random-button {
+    background-image: var(--header-grad-color);
+    box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.15);
+    color: white;
+    height: 2rem;
+    width: 10rem;
+    border-radius: 18px;
+    font-size: 18px;
+}
+
+
+
+.images-container {
+    display: grid;
+    margin: 0 auto;
+    width: 70.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+}
+
+.image-item {
+    background-position: center center;
+    background-size: cover;
+    width: 12.5rem;
+    height:  10.8rem;
+    align-items: center;
+    justify-content: center;
+}

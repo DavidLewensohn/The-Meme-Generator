@@ -1,0 +1,24 @@
+.main-meme-maker {
+    background-color: rgb(119, 64, 64);
+    width: 100%;
+    display: flex; 
+    /* display: none; */
+    align-items: center;
+    
+}
+
+canvas {
+    background-color: rgb(255, 255, 255);
+    outline: 3px solid rgb(195, 25, 25);
+
+}
+
+.edit-tools-container {
+    width: 20rem;
+    height: 20rem;
+    background-color: #fff;
+}
+
+.text-input {
+    height: 50px;
+}

@@ -1,8 +1,11 @@
 @import url(vars.css);
 @import url(base.css);
 @import url(header.css);
-@import url(main.css);
-@import url(canvas.css);
+@import url(main/gallery.css);
+@import url(main/canvas.css);
+@import url(screens.css);
+
+
 
 
 

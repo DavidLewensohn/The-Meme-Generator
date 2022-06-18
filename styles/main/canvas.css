@@ -1,0 +1,164 @@
+.main-meme-maker {
+    background-color: var(--main-bck-color);
+    width: 100%;
+    /* display: flex;  */
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+
+canvas {
+    outline: 1px solid rgb(5, 4, 4);
+    border-radius: 10%;
+
+}
+
+.control-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #4b727a;
+    width: 28.125rem;
+    height: 28.125rem;
+    border-radius: 10%;
+    align-items: center;
+    margin: 1rem;
+
+
+}
+
+.lines-func {
+    display: flex;
+    justify-content: center;
+    background-color: #29b47f;
+    width: 80%;
+    height: 30%;
+    border-radius: 30px;
+    margin-top: 3rem;
+}
+
+.lines-func button {
+    height: 2.5rem;
+    width: 5rem;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+    background-color: #ededed;
+    border-radius: 11px;
+    border: 1px solid #dcdcdc;
+    cursor: pointer;
+    color: #777777;
+    text-align: center;
+    padding: 6px 24px;
+    text-shadow: 0px 1px 0px #ffffff;
+    margin: .5rem;
+    margin-top: 2rem;
+
+}
+
+
+
+.lines-func button:hover {
+    background: linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+    background-color: #dfdfdf;
+}
+
+.lines-func button:active {
+    position: relative;
+    top: 1px;
+}
+
+.text-input-holder {
+    padding-block-start: 2rem;
+
+}
+
+.text-input-holder input {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: 2px solid #119caf;
+
+}
+
+.color-and-sizes * {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 15%;
+    padding: 0px;
+    margin: 5px;
+
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+.color-and-sizes {
+  margin-top: 2rem;
+
+    display: flex;
+
+
+
+}
+
+.move-up,
+.move-down {
+    height: 2.5rem;
+    width: 1rem;
+
+    margin-inline-end: 0px;
+}
+
+.share-container {
+    display: none;
+}
+
+
+.share-panell {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fa9522;
+    width: 80%;
+    height: 20%;
+    border-radius: 30px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+
+
+}
+.share-req ,.download{
+    height: 2.5rem;
+    width: 6rem;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    background: linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+    background-color: #ededed;
+    border-radius: 11px;
+    border: 1px solid #dcdcdc;
+    cursor: pointer;
+    color: #777777;
+    text-align: center;
+    text-shadow: 0px 1px 0px #ffffff;
+
+}
+.share-now {
+    height: 2.5rem;
+    width: 6rem;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    border-radius: 11px;
+
+    cursor: pointer;
+    color: black;
+    text-align: center;
+    background-color: #1877F2;
+
+
+}

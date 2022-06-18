@@ -24,16 +24,20 @@
         <section class="main-gallery-container">
             <div class="gallery-head">
                 <form action="">
-                    <div><input type="search" placeholder="Search"></div>
-                    <div><input type="words-filter"></div>
-                    <button class="more-button">More</button>
+                    <div><input class="search" name="search" type="search" placeholder="Search">
+                        <button onclick="onSearch(event)" class="search-button">Ok</button>
+                    </div>
+
+                    <!-- <div><input type="words-filter"></div> -->
+
                 </form>
+                <button class="random-button" onclick="onRandomMeme(event)">Random </button>
             </div>
 
             <section class="images-container">
                 <div class="image-item" onclick="onImgSelect(self)"></div>
-                <div class="image-item" onclick= "onImgSelect(self)"></div>
-     
+                <div class="image-item" onclick="onImgSelect(self)"></div>
+
 
 
             </section>
@@ -46,13 +50,36 @@
             <canvas width="450px" height="450px"></canvas>
 
 
-            <div class="edit-tools-container">
-                <!-- <form onsubmit="onInput(event)"> -->
-                    <input onchange="onTextInput(event)" name="text-input" type="text" >
-                    <input onchange="onColorInput(event)" name="color-input" type="color" >
-                    <button onclick="onLargeText()">+</button>
-                    <button onclick="onSmallText()">-</button>
-                <!-- </form> -->
+            <div class="control-box">
+                <div class="text-input-holder"><input onkeyup="onTextInput(event)" type='text' name='text-input'
+                        placeholder="Write your meme here"></div>
+                <div class="color-and-sizes">
+                    <input onchange="onColorInput(event)" name="color-input" type="color">
+                    <button class="large" onclick="onLargeText()">A+</button>
+                    <button class="small" onclick="onSmallText()">A-</button>
+                    <button class="move-up" onclick="onMoveLineUp()">⬆</button>
+                    <button class="move-down" onclick="onMoveLineDown()">⬇</button>
+
+                </div>
+                <div class="lines-func">
+                    <button onclick="onSwitchLine('add')">ADD line </button>
+                    <button onclick="onSwitchLine('line-up')">line UP </button>
+                    <button onclick="onSwitchLine('line-down')">line Down </button>
+                </div>
+
+
+                <div class="share-panell">
+                    <button class="share-req" onclick="uploadImg()">Share</button>
+                    <p class="user-msg"></p>
+                    <div class="share-container"></div>
+    
+    
+                    <a href="#" onclick="downloadCanvas(this)" download="my-img.jpg"><button
+                            class="download">Download</button>
+                    </a>
+                </div>
+
+
 
             </div>
         </section>
@@ -60,6 +87,11 @@
 
 
     </main>
+    <script src="js/utils.js"></script>
+    <script src="js/memesSentences.js"></script>
+    <script src="js/upload-service.js"></script>
+    <script src="js/memeControler.dwonloadAndShare.js"></script>
+    <script src="js/memeControler.touchAndMouse.js"></script>
     <script src="js/memeServise.js"></script>
     <script src="js/galleryController.js"></script>
     <script src="js/memeControler.js"></script>
