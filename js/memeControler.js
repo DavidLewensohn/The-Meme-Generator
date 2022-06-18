@@ -34,17 +34,31 @@ function renderMeme() {
                 ctx.strokeStyle = '3px'
                 ctx.textBaseline = 'middle'
                 ctx.strokeRect(elCanvas.width / 2 - textWidth / 2, y - line.fontSize / 2, textWidth + 20, line.fontSize)
-
-
             }
-
         })
-
     }
-
-
-
 }
+function clearFrame() {
+    var img = new Image()
+    var meme = getMeme()
+    img.src = meme.imgSrc
+
+
+    img.onload = () => {
+        ctx.drawImage(img, 0, 0, elCanvas.width, elCanvas.height)
+        meme.lines.forEach((line, i) => {
+            var y = line.pos.y * (i + 1), x = line.pos.x, text = line.text
+            console.log(i, ' text:', line.text)
+            ctx.font = `${line.fontSize}px ${line.fontFamily}`
+            ctx.fillStyle = line.color
+            console.log(i, ' color:', line.color)
+            ctx.fillText(text, x, y)
+            ctx.strokeText(text, x, y)
+        })
+    }
+}
+
+
 
 function onTextInput() {
 

@@ -27,15 +27,32 @@
         display: grid;
         margin: 0 auto;
         width: 26rem;
-        grid-template-columns:  1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 2rem;
     }
+
     .main-meme-maker {
         background-color: var(--main-bck-color);
         /* display: flex;  */
         display: none;
         flex-direction: column;
 
-        
+
+    }
+
+    .header-buttons-container {
+        display: none;
+    }
+    .main-gallery-container {
+        border-radius: 0px;
+        width: 100%;
+
+    }
+    .search-button{
+        display: none;
+    }
+    .header-container{
+        border-radius: 0px;
+        width: 100%;
     }
 }

@@ -1,7 +1,7 @@
 
 function uploadImg() {
     const imgDataUrl = elCanvas.toDataURL("image/jpeg");// gets the canvas content as an image format
-
+    clearFrame()
     // A function to be called if request succeeds
     function onSuccess(uploadedImgUrl) {
         const encodedUploadedImgUrl = encodeURIComponent(uploadedImgUrl)//encode the instance of certain characters in the url
