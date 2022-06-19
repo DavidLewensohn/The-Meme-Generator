@@ -1,23 +1,39 @@
-@media (max-width: 1150px) {
+@media (max-width: 1230px) {
 
     .images-container {
         display: grid;
 
         width: 56rem;
         grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
+
     }
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 950px) {
 
     .images-container {
         display: grid;
 
         width: 41.5rem;
         grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
+
+    }
+}
+
+@media (max-width: 730px) {
+
+    .images-container {
+        display: grid;
+
+        width: 37rem;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .image-item {
+        width: 10rem;
+        height: 10rem;
     }
 }
 
@@ -26,13 +42,12 @@
     .images-container {
         display: grid;
         width: min-content;
-        grid-template-columns: 8rem 8rem;
-        gap: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+
     }
 
     .main-meme-maker {
         background-color: var(--main-bck-color);
-        /* display: flex;  */
         display: none;
         flex-direction: column;
 
@@ -55,17 +70,18 @@
 
     .header-container {
         border-radius: 0px;
-        width: 100%;
+
     }
 
     canvas {
-        width: 23rem;
-        height: 23rem;
+        width: 19rem;
+        height: 19rem;
     }
 
     .control-box {
-        width: 23rem;
-        height: 23rem;
+        width: 19rem;
+        height: 21rem;
+
     }
 
     .image-item {
@@ -73,23 +89,32 @@
         height: 8rem;
     }
 
-        html {
-            min-width: 24rem;
-        }
-        
-        .gallery-head {
-            justify-content: start;
-        
-        }
-        
-        .gallery-head * {
-            width: 7rem;
-        }
-        
-        .gallery-head:first-child {
-            margin-left: 1rem;
-        }
+    .gallery-head {
+        flex-direction: column;
+        height: 7rem;
+
+    }
+
+
+    .gallery-head:first-child {
+        margin-left: 3rem;
+    }
+
+    .lines-func {
+        margin: 0;
+        width: auto;
+        background-color: rgba(0, 255, 255, 0);
+    }
+
+    .text-input-holder input {
+        width: auto;
+    
+    }
+    .lines-func button{
+        background-color: #29b47f;
+        background: linear-gradient(to bottom, #ededed 1%, #29b47f 100%);
+    }
+    .share-panell{
+        background-color: rgba(0, 0, 0, 0);
+    }
 }
-
-
-

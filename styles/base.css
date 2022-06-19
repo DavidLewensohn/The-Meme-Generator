@@ -6,3 +6,6 @@ body {
     background-color: var( --body-color);
     margin: 0 ;
 }
+ html {
+    min-width: 320px;
+ }
