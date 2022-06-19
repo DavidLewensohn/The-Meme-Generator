@@ -55,4 +55,12 @@
         border-radius: 0px;
         width: 100%;
     }
+    canvas {
+       width: 23rem;
+       height: 23rem;
+    }
+    .control-box{
+        width: 23rem;
+        height: 23rem;
+    }
 }
