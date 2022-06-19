@@ -2,10 +2,10 @@
 
 var elLink
 
-function download(elLink) {
+function download() {
     //protect the image soo attacker could not download imgs from diff domain
     const data = elCanvas.toDataURL()// for security reason you can`t do toDataUrl on tainted canvas
-    console.log('elLink:', elLink)
+    
     console.log('data: ', data)
     elLink.href = data
 
@@ -15,9 +15,10 @@ function download(elLink) {
 
 function downloadCanvas(link) {
     elLink = link
+    console.log('elLink:', elLink)
     
     clearFrame()
-    const myTimeout = setTimeout(download(elLink), 5000);
+    setTimeout(download, 5000);
     
     
 
